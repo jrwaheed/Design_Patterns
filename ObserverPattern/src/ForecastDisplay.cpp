@@ -2,21 +2,21 @@
 #include <list>
 #include <iterator>
 #include <vector>
-#include "../include/StatisticsDisplay.h"
+#include "../include/ForecastDisplay.h"
 
-StatisticsDisplay::StatisticsDisplay() {}
+ForecastDisplay::ForecastDisplay() {}
 
-void StatisticsDisplay::updateDisplay(float utemperature, float uhumidity, float upressure)
+void ForecastDisplay::updateDisplay(float utemperature, float uhumidity, float upressure)
 {
-    std::cout << "Updating StatisticsDisplay" << std::endl;
+    std::cout << "Updating ForecastDisplay" << std::endl;
     temperature = utemperature;
     humidity = uhumidity;
     pressure = upressure;
 };
 
-void StatisticsDisplay::displayInfo()
+void ForecastDisplay::displayInfo()
 {
-    std::cout << "StatisticsDisplay info:" << std::endl;
+    std::cout << "ForecastDisplay info:" << std::endl;
     std::cout << "Temperature: " << temperature << std::endl;
     std::cout << "Humidity: " << humidity << std::endl;
     std::cout << "Pressure: " << pressure << std::endl;

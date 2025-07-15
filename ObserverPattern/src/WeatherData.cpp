@@ -3,6 +3,9 @@
 #include <iterator>
 #include <vector>
 #include "../include/WeatherData.h"
+#include "../include/StatisticsDisplay.h"
+#include "../include/CurrentConditionDisplay.h"
+#include "../include/ForecastDisplay.h"
 
 // class WeatherData
 
@@ -21,9 +24,22 @@ WeatherData::WeatherData(float utemperature, float uhumidity, float upressure)
     pressure = upressure;
 }
 
+// BELOW IS THE SECTION THAT IS INCORRECT AND NEEDS IMPROVEMENT.
+// WITH THE IMPLEMENTATION BELOW WE WOULD ALWAYS NEED TO THE AMEND THE CODE EACH TIME A NEW DISPLAY IS ADDED
+// HERE THE OBSERVE PATTERN CAN BE IMPLEMENTED
 void WeatherData::notifyObservers()
 {
-    std::cout << "WeatherData notifyObservers" << std::endl;
+    StatisticsDisplay statisticsDisplay;
+    statisticsDisplay.updateDisplay(25, 10, 23);
+    statisticsDisplay.displayInfo();
+
+    CurrentConditionDisplay currentConditionDisplay;
+    currentConditionDisplay.updateDisplay(25, 10, 23);
+    currentConditionDisplay.displayInfo();
+
+    ForecastDisplay forecastDisplay;
+    forecastDisplay.updateDisplay(25, 10, 23);
+    forecastDisplay.displayInfo();
 };
 void WeatherData::printData()
 {

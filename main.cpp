@@ -8,7 +8,7 @@ int main()
     std::cout << "Hello, Observer Pattern!" << std::endl;
 
     WeatherData weatherData(25, 10, 23);
-    weatherData.printData();
+    weatherData.notifyObservers();
 
     return 0;
 }

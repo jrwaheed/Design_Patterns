@@ -3,7 +3,15 @@ project(patterns)
 
 add_library(observe 
     ObserverPattern/src/WeatherData.cpp 
-    ObserverPattern/include/WeatherData.h)
+    ObserverPattern/include/WeatherData.h
+    ObserverPattern/src/StatisticsDisplay.cpp 
+    ObserverPattern/include/StatisticsDisplay.h
+    ObserverPattern/src/CurrentConditionDisplay.cpp 
+    ObserverPattern/include/CurrentConditionDisplay.h
+    ObserverPattern/src/ForecastDisplay.cpp 
+    ObserverPattern/include/ForecastDisplay.h
+    
+    )
 
 add_executable(patternprogram 
     main.cpp 
