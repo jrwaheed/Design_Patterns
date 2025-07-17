@@ -1,9 +1,12 @@
+#pragma once
+
 #ifndef CURRENTCONDITIONDISPLAY_H
 #define CURRENTCONDITIONDISPLAY_H
 
 #include <iostream>
+#include "../src/Displays.cpp"
 
-class CurrentConditionDisplay
+class CurrentConditionDisplay : public Displays
 {
 
 private:

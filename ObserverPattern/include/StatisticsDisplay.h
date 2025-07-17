@@ -1,9 +1,12 @@
+
+#pragma once
 #ifndef STATISTICSDISPLAY_H
 #define STATISTICSDISPLAY_H
 
 #include <iostream>
+#include "../src/Displays.cpp"
 
-class StatisticsDisplay
+class StatisticsDisplay : public Displays
 {
 
 private:

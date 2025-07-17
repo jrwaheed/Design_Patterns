@@ -1,9 +1,12 @@
+#pragma once
+
 #ifndef FORECASTDISPLAY_H
 #define FORECASTDISPLAY_H
 
 #include <iostream>
+#include "../src/Displays.cpp"
 
-class ForecastDisplay
+class ForecastDisplay : public Displays
 {
 
 private:
