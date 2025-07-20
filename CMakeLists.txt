@@ -26,9 +26,14 @@ add_library(factory
     FactoryPattern/include/PepperoniPizza.h
     )
 
+add_library(singleton
+    SingletonPattern/Printer.cpp
+    )
+
 add_executable(patternprogram 
     main.cpp 
 )
 
 target_link_libraries(patternprogram observe)
 target_link_libraries(patternprogram factory)
+target_link_libraries(patternprogram singleton)

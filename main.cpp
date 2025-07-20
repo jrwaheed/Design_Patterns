@@ -10,10 +10,13 @@
 #include "FactoryPattern/include/VeggiePizza.h"
 #include "FactoryPattern/include/PepperoniPizza.h"
 
+#include "SingletonPattern/Printer.cpp"
+
 using namespace std;
 
 int main()
 {
+    // OBSERVER_PATTERN
     // std::cout << "Hello, Observer Pattern!" << std::endl;
 
     // StatisticsDisplay *staticDis = new StatisticsDisplay();
@@ -25,9 +28,14 @@ int main()
     // WeatherData weatherData(25, 10, 23, displaysList);
     // weatherData.notifyObservers();
 
-    Restaurant giordanos;
+    // FACTORY PATTERN
+    // Restaurant giordanos;
+    // giordanos.makePizza("jalapeno");
 
-    giordanos.makePizza("jalapeno");
+    // SINGLETON PATTERN
+
+    Printer *printer = Printer::getInstance();
+    printer->confirmPrinterIsRunning();
 
     return 0;
 }
