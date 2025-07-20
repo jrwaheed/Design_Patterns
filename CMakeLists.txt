@@ -11,7 +11,19 @@ add_library(observe
     ObserverPattern/include/CurrentConditionDisplay.h
     ObserverPattern/src/ForecastDisplay.cpp 
     ObserverPattern/include/ForecastDisplay.h
-    
+    )
+
+add_library(factory
+    FactoryPattern/src/Restaurant.cpp
+    FactoryPattern/include/Restaurant.h
+    FactoryPattern/src/CheesePizza.cpp
+    FactoryPattern/include/CheesePizza.h
+    FactoryPattern/src/JalapenoPizza.cpp
+    FactoryPattern/include/JalapenoPizza.h
+    FactoryPattern/src/VeggiePizza.cpp
+    FactoryPattern/include/VeggiePizza.h
+    FactoryPattern/src/PepperoniPizza.cpp
+    FactoryPattern/include/PepperoniPizza.h
     )
 
 add_executable(patternprogram 
@@ -19,4 +31,4 @@ add_executable(patternprogram
 )
 
 target_link_libraries(patternprogram observe)
-
+target_link_libraries(patternprogram factory)

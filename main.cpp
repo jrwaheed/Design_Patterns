@@ -4,20 +4,30 @@
 #include "ObserverPattern/include/CurrentConditionDisplay.h"
 #include "ObserverPattern/include/ForecastDisplay.h"
 
+#include "FactoryPattern/include/Restaurant.h"
+#include "FactoryPattern/include/CheesePizza.h"
+#include "FactoryPattern/include/JalapenoPizza.h"
+#include "FactoryPattern/include/VeggiePizza.h"
+#include "FactoryPattern/include/PepperoniPizza.h"
+
 using namespace std;
 
 int main()
 {
-    std::cout << "Hello, Observer Pattern!" << std::endl;
+    // std::cout << "Hello, Observer Pattern!" << std::endl;
 
-    StatisticsDisplay *staticDis = new StatisticsDisplay();
-    CurrentConditionDisplay *currentDis = new CurrentConditionDisplay();
-    ForecastDisplay *forecastDis = new ForecastDisplay();
+    // StatisticsDisplay *staticDis = new StatisticsDisplay();
+    // CurrentConditionDisplay *currentDis = new CurrentConditionDisplay();
+    // ForecastDisplay *forecastDis = new ForecastDisplay();
 
-    std::list<Displays *> displaysList = {staticDis, currentDis, forecastDis};
+    // std::list<Displays *> displaysList = {staticDis, currentDis, forecastDis};
 
-    WeatherData weatherData(25, 10, 23, displaysList);
-    weatherData.notifyObservers();
+    // WeatherData weatherData(25, 10, 23, displaysList);
+    // weatherData.notifyObservers();
+
+    Restaurant giordanos;
+
+    giordanos.makePizza("jalapeno");
 
     return 0;
 }
