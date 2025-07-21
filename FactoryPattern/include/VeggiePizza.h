@@ -4,15 +4,16 @@
 #define VEGGIEPIZZA_H
 
 #include <iostream>
+#include "Pizza.h"
 
 using namespace std;
 
-class VeggiePizza
+class VeggiePizza : public Pizza
 {
 
 public:
     VeggiePizza();
-    void makePizza();
+    void pizzaUpdate();
 };
 
 #endif

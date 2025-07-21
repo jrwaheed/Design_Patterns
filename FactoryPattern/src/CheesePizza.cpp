@@ -2,7 +2,7 @@
 
 CheesePizza::CheesePizza() {}
 
-void CheesePizza::makePizza()
+void CheesePizza::pizzaUpdate()
 
 {
     std::cout << "making a cheese pizza" << std::endl;

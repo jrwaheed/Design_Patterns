@@ -4,6 +4,10 @@
 #define RESTAURANT_H
 
 #include <iostream>
+#include "Pizza.h"
+#include "PizzaFactory.h"
+#include "../src/PizzaTypes.cpp"
+#include "Pizza.h"
 
 using namespace std;
 
@@ -12,10 +16,6 @@ class Restaurant
 
 public:
     Restaurant();
-    void makePizza(std::string pizzaType);
-    void bake();
-    void cut();
-    void box();
+    Pizza *orderPizza(PizzaTypes pizzaType);
 };
-
 #endif

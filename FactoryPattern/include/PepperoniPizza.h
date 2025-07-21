@@ -4,15 +4,16 @@
 #define PEPPERONPIZZA_H
 
 #include <iostream>
+#include "Pizza.h"
 
 using namespace std;
 
-class PepperoniPizza
+class PepperoniPizza : public Pizza
 {
 
 public:
     PepperoniPizza();
-    void makePizza();
+    void pizzaUpdate();
 };
 
 #endif

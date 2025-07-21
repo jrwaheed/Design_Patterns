@@ -14,16 +14,20 @@ add_library(observe
     )
 
 add_library(factory
-    FactoryPattern/src/Restaurant.cpp
     FactoryPattern/include/Restaurant.h
-    FactoryPattern/src/CheesePizza.cpp
-    FactoryPattern/include/CheesePizza.h
-    FactoryPattern/src/JalapenoPizza.cpp
-    FactoryPattern/include/JalapenoPizza.h
-    FactoryPattern/src/VeggiePizza.cpp
-    FactoryPattern/include/VeggiePizza.h
-    FactoryPattern/src/PepperoniPizza.cpp
     FactoryPattern/include/PepperoniPizza.h
+    FactoryPattern/include/CheesePizza.h
+    FactoryPattern/include/JalapenoPizza.h
+    FactoryPattern/include/VeggiePizza.h
+    FactoryPattern/include/Pizza.h
+    FactoryPattern/include/PizzaFactory.h
+    FactoryPattern/src/Restaurant.cpp
+    FactoryPattern/src/CheesePizza.cpp
+    FactoryPattern/src/JalapenoPizza.cpp
+    FactoryPattern/src/VeggiePizza.cpp
+    FactoryPattern/src/PepperoniPizza.cpp
+    FactoryPattern/src/PizzaTypes.cpp
+    FactoryPattern/src/PizzaFactory.cpp
     )
 
 add_library(singleton

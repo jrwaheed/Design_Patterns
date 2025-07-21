@@ -4,15 +4,16 @@
 #define JALAPENOPIZZA_H
 
 #include <iostream>
+#include "Pizza.h"
 
 using namespace std;
 
-class JalapenoPizza
+class JalapenoPizza : public Pizza
 {
 
 public:
     JalapenoPizza();
-    void makePizza();
+    void pizzaUpdate();
 };
 
 #endif

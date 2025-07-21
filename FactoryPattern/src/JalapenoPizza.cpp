@@ -2,7 +2,7 @@
 
 JalapenoPizza::JalapenoPizza() {}
 
-void JalapenoPizza::makePizza()
+void JalapenoPizza::pizzaUpdate()
 
 {
     std::cout << "making a jalapeno pizza" << std::endl;

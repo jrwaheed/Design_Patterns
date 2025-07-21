@@ -9,6 +9,7 @@
 #include "FactoryPattern/include/JalapenoPizza.h"
 #include "FactoryPattern/include/VeggiePizza.h"
 #include "FactoryPattern/include/PepperoniPizza.h"
+#include "FactoryPattern/src/PizzaTypes.cpp"
 
 #include "SingletonPattern/Printer.cpp"
 
@@ -29,13 +30,13 @@ int main()
     // weatherData.notifyObservers();
 
     // FACTORY PATTERN
-    // Restaurant giordanos;
-    // giordanos.makePizza("jalapeno");
+    Restaurant giordanos;
+    giordanos.orderPizza(PizzaTypes::VEGGIE);
 
     // SINGLETON PATTERN
 
-    Printer *printer = Printer::getInstance();
-    printer->confirmPrinterIsRunning();
+    // Printer *printer = Printer::getInstance();
+    // printer->confirmPrinterIsRunning();
 
     return 0;
 }
